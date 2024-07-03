@@ -15,18 +15,18 @@ const Navbar = () => {
   //retornando toda a rederização da NavBar
   return (
     <header>
-      <div className="container mx-auto px-4 flex items-center justify-between h-14">
-        <div className="flex items-center justify-center">
+      <div className="container relative z-10 mx-auto px-4 flex items-center justify-between h-14">
+        <div className="flex items-center">
           <p className="text-white text-2xl font-bold">Portifolio</p>
         </div>
         <div className="hidden md:flex space-x-20">
-          <Link href="/" className="text-white hover:text-gray-300 hover:scale-110 transition duration-300 ease-in-out">
+          <Link href="/" className="text-white hover:text-blue-400 hover:scale-110 transition duration-300 ease-in-out">
             Home
           </Link>
-          <Link href="/" className="text-white hover:text-gray-300 hover:scale-110 transition duration-300 ease-in-out">
+          <Link href="/" className="text-white hover:text-blue-400 hover:scale-110 transition duration-300 ease-in-out">
             About
           </Link>
-          <Link href="/" className="text-white hover:text-gray-300 hover:scale-110 transition duration-300 ease-in-out">
+          <Link href="/" className="text-white hover:text-blue-400 hover:scale-110 transition duration-300 ease-in-out">
             Projects
           </Link>
         </div>
@@ -45,20 +45,15 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden absolute top-14 left-0 w-full z-20 bg-red-100">
           <ul className="flex flex-col items-center space-y-4 mt-4">
             <li>
-              <Link href="/" className="text-white hover:text-gray-300">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-white hover:text-gray-300">
+              <Link href="/" className="text-white hover:text-blue-400">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="text-white hover:text-gray-300">
+              <Link href="/" className="text-white hover:text-blue-400">
                 Projects
               </Link>
             </li>
