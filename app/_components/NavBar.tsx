@@ -15,11 +15,11 @@ const Navbar = () => {
   //retornando toda a rederização da NavBar
   return (
     <header>
-      <div className="container relative z-10 mx-auto px-4 flex items-center justify-between h-14">
-        <div className="flex items-center">
+      <div className=" relative z-10 mx-auto px-4 flex items-center justify-between h-14">
+        <div className="flex items-center ml-0 md:ml-20">
           <p className="text-white text-2xl font-bold">Portifolio</p>
         </div>
-        <div className="hidden md:flex space-x-20">
+        <div className="hidden md:flex space-x-14">
           <Link href="/" className="text-white hover:text-blue-400 hover:scale-110 transition duration-300 ease-in-out">
             Home
           </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
             Projects
           </Link>
         </div>
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-6 lg:mr-10">
           <Link href="https://www.linkedin.com/in/samuel-fava-de-brito/" target="_blank">
             <button className="text-white bg-blue-500 font-bold rounded-full px-4 py-2 hover:scale-125 transition duration-300 ease-in-out hover:shadow-custom-color">
               Contact
