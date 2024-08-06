@@ -23,7 +23,7 @@ const Navbar = () => {
   //retornando toda a rederização da NavBar
   return (
     <header className="bg-black w-full h-16 flex justify-center items-center">
-      <section className=" px-8 w-full max-w-screen-lg flex justify-between">
+      <section className=" px-8 w-full max-w-screen-xl flex justify-between">
         <nav className="flex items-center justify-center">
           <Link href="/">
             <h1 className="text-white text-xl font-bold">Portifolio</h1>
