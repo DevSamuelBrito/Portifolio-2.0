@@ -29,7 +29,7 @@ const Navbar = () => {
             <h1 className="text-white text-xl font-bold">Portifolio</h1>
           </Link>
         </nav>
-        <div className="flex items-center justify-between w-96">
+        <div className="hidden md:flex items-center justify-between w-96">
           <Link
             className="text-white hover:text-gray-400 hover:scale-110 transition duration-300 ease-in-out"
             href="/"
@@ -48,16 +48,68 @@ const Navbar = () => {
           >
             Projects
           </Link>
-
-          <button
-            onClick={() => {
-              console.log("Console");
-            }}
-            className="border text-white cursor-pointer rounded-2xl bg-transparent px-6 py-1 hover:bg-white hover:text-black hover:font-bold hover:scale-110 transition duration-300 ease-in-out"
+          <Link
+            href="https://www.linkedin.com/in/samuel-fava-de-brito/"
+            target="_blank"
           >
-            Contact
+            <button
+              onClick={() => {
+                console.log("Console");
+              }}
+              className="border text-white cursor-pointer rounded-2xl bg-transparent px-6 py-1 hover:bg-white hover:text-black hover:font-bold hover:scale-110 transition duration-300 ease-in-out"
+            >
+              Contact
+            </button>
+          </Link>
+        </div>
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+          >
+            {isOpen ? (
+              <FaTimes className="h-6 w-6" />
+            ) : (
+              <FaBars className="h-6 w-6" />
+            )}
           </button>
         </div>
+        {isOpen && (
+          <div className="md:hidden absolute top-14 left-0 w-full z-20 bg-slate-900">
+            <ul className="flex flex-col items-center space-y-4 mt-4">
+              <li>
+                <Link href="/" className="text-white hover:text-blue-400">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="text-white hover:text-blue-400">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.linkedin.com/in/samuel-fava-de-brito/"
+                  target="_blank"
+                >
+                  <button className="text-white bg-red-500 font-bold rounded-full px-4 py-2">
+                    Contact
+                  </button>
+                </Link>
+              </li>
+              <li>
+                <Image
+                  onClick={changeImageButton}
+                  src={language}
+                  alt="change language"
+                  width={32}
+                  height={32}
+                  className="cursor-pointer"
+                ></Image>{" "}
+              </li>
+            </ul>
+          </div>
+        )}
       </section>
     </header>
   );
