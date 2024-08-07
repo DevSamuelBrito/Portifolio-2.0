@@ -22,28 +22,28 @@ const Navbar = () => {
   };
   //retornando toda a rederização da NavBar
   return (
-    <header className="bg-black w-full h-16 flex justify-center items-center">
-      <section className=" px-8 w-full max-w-screen-xl flex justify-between">
+    <header className="bg-transparent w-full h-16 flex justify-center items-center">
+      <section className=" px-8 mt-5 w-full max-w-screen-xl flex justify-between">
         <nav className="flex items-center justify-center">
           <Link href="/">
-            <h1 className="text-white text-xl font-bold">Portifolio</h1>
+            <h1 className="text-white text-3xl font-bold">Portifolio</h1>
           </Link>
         </nav>
         <div className="hidden md:flex items-center justify-between w-96">
           <Link
-            className="text-white hover:text-gray-400 hover:scale-110 transition duration-300 ease-in-out"
+            className="text-white hover:text-gray-400  text-lg  hover:scale-110 transition duration-300 ease-in-out"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="text-white hover:text-gray-400 hover:scale-110 transition duration-300 ease-in-out"
+            className="text-white hover:text-gray-400  text-lg hover:scale-110 transition duration-300 ease-in-out"
             href="/"
           >
             About
           </Link>
           <Link
-            className="text-white hover:text-gray-400 hover:scale-110 transition duration-300 ease-in-out"
+            className="text-white hover:text-gray-400  text-lg hover:scale-110 transition duration-300 ease-in-out"
             href="/"
           >
             Projects
@@ -56,7 +56,7 @@ const Navbar = () => {
               onClick={() => {
                 console.log("Console");
               }}
-              className="border text-white cursor-pointer rounded-2xl bg-transparent px-6 py-1 hover:bg-white hover:text-black hover:font-bold hover:scale-110 transition duration-300 ease-in-out"
+              className="border text-white cursor-pointer text-lg rounded-2xl bg-transparent px-6 py-1 hover:bg-white hover:text-black hover:font-bold hover:scale-110 transition duration-300 ease-in-out"
             >
               Contact
             </button>
@@ -75,7 +75,7 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden absolute top-14 left-0 w-full z-20 bg-slate-900">
+          <div className="md:hidden absolute top-14 left-0 w-full z-20 bg-gray-900">
             <ul className="flex flex-col items-center space-y-4 mt-4">
               <li>
                 <Link href="/" className="text-white hover:text-blue-400">
@@ -90,11 +90,10 @@ const Navbar = () => {
               <li>
                 <Link
                   href="https://www.linkedin.com/in/samuel-fava-de-brito/"
+                  className="text-white hover:text-blue-400"
                   target="_blank"
                 >
-                  <button className="text-white bg-red-500 font-bold rounded-full px-4 py-2">
-                    Contact
-                  </button>
+                  Contact
                 </Link>
               </li>
               <li>

@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'custom-color': '0px 0px 20px rgba(0, 0, 255, 0.75)',
+        "custom-color": "0px 0px 20px rgba(0, 0, 255, 0.75)",
       },
+      backgroundImage:{
+        'custom-gradient': 'linear-gradient(to bottom, #0d1224, #1d1537)',
+      }
     },
   },
   plugins: [],
