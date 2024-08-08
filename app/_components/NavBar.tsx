@@ -75,7 +75,7 @@ const Navbar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden absolute top-14 left-0 w-full z-20 bg-gray-900">
+          <div className="md:hidden absolute mt-14 left-0 w-full z-20 bg-gray-900">
             <ul className="flex flex-col items-center space-y-4 mt-4">
               <li>
                 <Link href="/" className="text-white hover:text-blue-400">
