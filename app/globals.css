@@ -9,3 +9,6 @@ body {
   background: linear-gradient(to bottom, #0d1224, #1d1537);
 }
 
+main {
+  height: calc(100vh - 76px);
+}
