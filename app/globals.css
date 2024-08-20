@@ -7,8 +7,19 @@ body {
   padding: 0;
   min-height: 100vh;
   background: linear-gradient(to bottom, #0d1224, #1d1537);
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+  overflow-y: scroll; /* garante que o conteúdo seja rolável */
 }
 
 main {
   height: calc(100vh - 76px);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
 }

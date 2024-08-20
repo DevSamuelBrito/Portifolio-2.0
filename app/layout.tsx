@@ -17,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={FontInter.className}>
-        <Navbar />
         {children}</body>
     </html>
   );
