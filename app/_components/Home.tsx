@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <main className=" snap-y snap-mandatory overflow-y-scroll">
+      <main className="snap-y snap-mandatory overflow-y-scroll scroll-smooth">
         <section className="h-screen snap-start flex relative items-center justify-center text-white">
           <h1>Page 1</h1>
         </section>
@@ -20,7 +20,7 @@ const Home = () => {
         </section>
         <section className="h-screen snap-start flex relative items-center justify-center text-white">
           <h1>Page 5</h1>
-        </section>{" "}
+        </section>
       </main>
     </>
   );
