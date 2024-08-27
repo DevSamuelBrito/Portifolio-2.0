@@ -6,21 +6,20 @@ const Home = () => {
     <>
       <NavBar />
       <main className="snap-y snap-mandatory overflow-y-scroll scroll-smooth">
-        <section className="h-screen snap-start flex items-center justify-center">
-          <div>
+        <section className="h-screen snap-start flex justify-center">
+          <div className="mt-28">
             <div className="flex items-center space-x-48">
-              <h1 className="max-w-md break-words leading-relaxed text-white">
-              <h1 className="text-5xl font-semibold text-white">
-                Hi There I'm Samuel Fava de Brito
-              </h1 >
-                Hello, welcome to my website! I am currently studying Analysis
-                and Systems Development at Fatec Rio Preto. I am preparing to
-                become a fullstack developer. I am currently looking for job
-                opportunities so that I can gain experience and knowledge to
-                evolve in the area. If you are interested, contact me on one of
-                my social networks, and be sure to check out my GITHUB to see my
-                projects.
-              </h1>
+              <div className="max-w-md break-words leading-relaxed text-white">
+                <h1 className="text-4xl font-semibold text-white">Hi There,</h1>
+                <span className="text-4xl font-semibold bg-gradient-text bg-300% bg-clip-text text-transparent animate-gradient-once">
+                  I'm Samuel Fava de Brito
+                </span>
+                <p className="text-xl mt-4">
+                  Welcome to my website! I am currently studying Analysis and
+                  Systems Development at Fatec Rio Preto. I am preparing to
+                  become a fullstack developer.
+                </p>
+              </div>
               <div>
                 <Image
                   src="/photo.png"
@@ -32,6 +31,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         <section className="h-screen snap-start flex relative items-center justify-center text-white">
           <h1>Page 2</h1>
         </section>
