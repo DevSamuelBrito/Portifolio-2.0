@@ -8,10 +8,12 @@ const Home = () => {
       <main className="snap-y snap-mandatory overflow-y-scroll scroll-smooth">
         <section className="h-screen snap-start flex items-center justify-center">
           <div>
-            <h1 className="text-lg font-semibold text-white">Hi There I'm Samuel Fava de Brito</h1>
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-48">
               <h1 className="max-w-md break-words leading-relaxed text-white">
-                . Hello, welcome to my website! I am currently studying Analysis
+              <h1 className="text-5xl font-semibold text-white">
+                Hi There I'm Samuel Fava de Brito
+              </h1 >
+                Hello, welcome to my website! I am currently studying Analysis
                 and Systems Development at Fatec Rio Preto. I am preparing to
                 become a fullstack developer. I am currently looking for job
                 opportunities so that I can gain experience and knowledge to
@@ -22,8 +24,8 @@ const Home = () => {
               <div>
                 <Image
                   src="/photo.png"
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   alt="Picture of the author"
                 />
               </div>
