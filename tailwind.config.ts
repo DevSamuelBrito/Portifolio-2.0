@@ -24,7 +24,7 @@ const config: Config = {
         '300%': '300%',
       },
       backgroundImage: {
-        'gradient-text': 'linear-gradient(90deg, #1e3a8a, #3b82f6, #60a5fa, #3b82f6, #1e3a8a)',
+        'gradient-text': 'linear-gradient(90deg,  #3b82f6, #1e3a8a, #3b82f6, #1e3a8a, #3b82f6)',
       },
     },
   },

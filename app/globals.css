@@ -22,4 +22,10 @@ main {
 
 html {
   scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+
+section{
+  height: calc(100vh - 4rem);
 }
