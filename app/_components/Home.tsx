@@ -8,7 +8,7 @@ const Home = () => {
       <main className="snap-y snap-mandatory overflow-y-scroll scroll-smooth">
         <section className="!h-[calc(100vh-4rem)] snap-start flex items-center justify-center">
           <div className="px-4  ">
-            <div className="flex flex-col md:flex-row items-center md:space-x-20 space-y-8 md:space-y-0 2xl:space-x-32">
+            <div className="flex flex-col md:flex-row items-center md:space-x-20 space-y-8 md:space-y-0 2xl:space-x-44">
               <div className="text-center md:text-left max-w-md break-words leading-relaxed text-white">
                 <h1 className="text-3xl sm:text-4xl md:text-4xl 2xl:text-5xl font-semibold text-white">
                   Hi There,
@@ -22,11 +22,12 @@ const Home = () => {
                   become a fullstack developer.
                 </p>
               </div>
-              <div>
+              <div className="w-full max-w-xs md:max-w-sm 2xl:max-w-md">
                 <Image
                   src="/photo.png"
                   width={300}
                   height={300}
+                  layout="responsive"
                   alt="Picture of the author"
                   className="mx-auto md:mx-0"
                 />

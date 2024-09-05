@@ -26,7 +26,7 @@ const Navbar = () => {
       <section className=" px-8 mt-5 w-full max-w-screen-xl flex justify-between">
         <nav className="flex items-center justify-center">
           <Link href="/">
-            <h1 className="text-white text-3xl font-bold">Samuel Brito</h1>
+            <h1 className="text-white 2xl:text-3xl font-bold md:text-2xl text-xl  ">Samuel Brito</h1>
           </Link>
         </nav>
         <div className="hidden md:flex items-center justify-between w-96">
